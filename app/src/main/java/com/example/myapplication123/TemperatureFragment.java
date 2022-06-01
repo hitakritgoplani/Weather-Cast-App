@@ -56,7 +56,7 @@ public class TemperatureFragment extends Fragment{
     }
 
     public void apiTemp(String cityName){
-        String url = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=7606bb4088fa18ea75c820e6176f3df3&units=metric";
+        String url = "https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=//API key&units=metric";
         JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
             @SuppressLint("SetTextI18n")

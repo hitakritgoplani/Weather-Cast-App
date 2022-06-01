@@ -62,7 +62,7 @@ public class AqiFragment extends Fragment {
     }
 
     public void getCoords(String CityName){
-        String url = "https://api.openweathermap.org/data/2.5/weather?q="+CityName+"&appid=7606bb4088fa18ea75c820e6176f3df3&units=metric";
+        String url = "https://api.openweathermap.org/data/2.5/weather?q="+CityName+"&appid=API Key";
         JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @SuppressLint("SetTextI18n")
             public void onResponse(JSONObject response) {
@@ -93,7 +93,7 @@ public class AqiFragment extends Fragment {
     }
 
     public void apiAqi(String CityName){
-        String url = "https://api.waqi.info/feed/"+CityName+"/?token=cb16e5481e99a018859aa19a3330573446f77b87";
+        String url = "https://api.waqi.info/feed/"+CityName+"/?token=//Token id";
         JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -131,7 +131,7 @@ public class AqiFragment extends Fragment {
     }
 
     public void apiUvi(){
-        String url = "https://api.openweathermap.org/data/2.5/onecall?lat="+latitude+"&lon="+longitude+"&exclude=hourly,daily&appid=7606bb4088fa18ea75c820e6176f3df3";
+        String url = "https://api.openweathermap.org/data/2.5/onecall?lat="+latitude+"&lon="+longitude+"&exclude=hourly,daily&appid=//API Key";
         JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @SuppressLint("SetTextI18n")
             public void onResponse(JSONObject response) {
