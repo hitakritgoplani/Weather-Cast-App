@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherCast</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="uvi">यूवीआई</string>
+    <string name="aqi">एक्यूआई</string>
+    <string name="enter_city_name">शहर का नाम दर्ज करें</string>
+    <string name="humidity">नमी</string>
+    <string name="wind_speed">हवा की गति</string>
+    <string name="minimum_ntemperature">न्यूनतम\nतापमान</string>
+    <string name="real_feels">वास्तविक अहसास :</string>
+    <string name="maximum_ntemperature">अधिकतम\nतापमान</string>
+    <string name="temperature">तापमान</string>
+    <string name="wind_speed_and_humidity">हवा की गति और नमी</string>
+    <string name="aqi_and_uvi">एक्यूआई और यूवीआई</string>
+    <string name="home">होम पेज</string>
+    <string name="weather_forecast">मौसम पूर्वानुमान</string>
+    <string name="weather_news">मौसम समाचार</string>
+    <string name="compare">मौसम की तुलना</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="about">ऐप के बारे में</string>
+    <string name="change_language">भाषा बदलें</string>
+</resources>

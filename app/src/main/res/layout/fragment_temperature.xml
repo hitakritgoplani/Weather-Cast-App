@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262833"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textTemp"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="32sp"
+            android:background="@drawable/circle"
+            android:paddingTop="47sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editcityname" />
+
+        <TextView
+            android:id="@+id/city1"
+            android:layout_width="200sp"
+            android:layout_height="36sp"
+            android:layout_marginTop="135sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textTemp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textTemp"
+            app:layout_constraintTop_toTopOf="@+id/textTemp" />
+
+        <TextView
+            android:id="@+id/tempMinBox"
+            android:layout_width="183sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="40sp"
+            android:text="@string/minimum_ntemperature"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tempMinBox2" />
+
+        <TextView
+            android:id="@+id/tempMinBox2"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="8sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/city1"
+            app:layout_constraintStart_toStartOf="@+id/city1"
+            app:layout_constraintTop_toBottomOf="@+id/tempMinBox3"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tempMinBox3"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="68sp"
+            android:paddingRight="5sp"
+            android:text="@string/real_feels"
+            android:textAlignment="textEnd"
+            android:textColor="@color/shadeofblue1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textTemp"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="@+id/textTemp"
+            app:layout_constraintTop_toBottomOf="@+id/city1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textTempMin"
+            android:layout_width="90sp"
+            android:layout_height="50sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tempMinBox"
+            app:layout_constraintStart_toStartOf="@+id/tempMinBox"
+            app:layout_constraintTop_toBottomOf="@+id/tempMinBox"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textTempMin2"
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tempMinBox3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tempMinBox3"
+            app:layout_constraintTop_toTopOf="@+id/tempMinBox3"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tempMaxBox"
+            android:layout_width="187sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginEnd="16sp"
+            android:text="@string/maximum_ntemperature"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tempMinBox2" />
+
+        <TextView
+            android:id="@+id/textTempMax"
+            android:layout_width="90sp"
+            android:layout_height="50sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tempMaxBox"
+            app:layout_constraintStart_toStartOf="@+id/tempMaxBox"
+            app:layout_constraintTop_toBottomOf="@+id/tempMaxBox" />
+
+        <EditText
+            android:id="@+id/editcityname"
+            android:layout_width="340sp"
+            android:layout_height="40sp"
+            android:alpha="0.4"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/enter_city_name"
+            android:inputType="text"
+            android:paddingLeft="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="#A9A9A9"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="42sp"
+            android:layout_height="40sp"
+            android:alpha="0.5"
+            android:background="@drawable/rounded_corner"
+            app:layout_constraintBottom_toBottomOf="@+id/editcityname"
+            app:layout_constraintEnd_toEndOf="@+id/editcityname"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/editcityname"
+            app:layout_constraintTop_toTopOf="@+id/editcityname"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/search" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

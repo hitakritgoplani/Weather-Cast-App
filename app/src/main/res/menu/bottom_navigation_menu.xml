@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_temp"
+        android:icon="@drawable/navtemp"
+        android:title="@string/temperature" />
+
+    <item
+        android:id="@+id/bottom_nav_windspeed"
+        android:icon="@drawable/navwind"
+        android:title="@string/wind_speed_and_humidity" />
+
+
+    <item
+        android:id="@+id/bottom_nav_aqi"
+        android:icon="@drawable/nav_aqi"
+        android:title="@string/aqi_and_uvi" />
+
+</menu>

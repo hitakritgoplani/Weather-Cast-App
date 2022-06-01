@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262833"
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:id="@+id/city1"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="68dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/compare" />
+
+
+        <TextView
+            android:id="@+id/city2"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="68dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/compare" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="48dp"
+            android:text="Temperature"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city1" />
+
+        <TextView
+            android:id="@+id/ws"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:text="Wind Speed"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp" />
+
+        <TextView
+            android:id="@+id/humid"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:text="Humidity"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ws" />
+
+        <TextView
+            android:id="@+id/aqi"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:text="AQI"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humid" />
+
+        <TextView
+            android:id="@+id/uvi"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:text="UVI"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.123"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aqi" />
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city1" />
+
+        <TextView
+            android:id="@+id/temp2"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city2" />
+
+        <TextView
+            android:id="@+id/ws1"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp1" />
+
+        <TextView
+            android:id="@+id/ws2"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp2" />
+
+        <TextView
+            android:id="@+id/humid1"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ws1" />
+
+        <TextView
+            android:id="@+id/humid2"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ws2" />
+
+        <TextView
+            android:id="@+id/aqi1"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humid1" />
+
+        <TextView
+            android:id="@+id/aqi2"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humid2" />
+
+        <TextView
+            android:id="@+id/uvi1"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aqi1" />
+
+        <TextView
+            android:id="@+id/uvi2"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.815"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aqi2" />
+
+
+        <EditText
+            android:id="@+id/editcityname1"
+            android:layout_width="340sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="48dp"
+            android:alpha="0.4"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/enter_city_name"
+            android:inputType="text"
+            android:paddingLeft="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="#A9A9A9"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/compare"
+            android:layout_width="111dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="28dp"
+            android:text="Compare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editcityname2" />
+
+        <EditText
+            android:id="@+id/editcityname2"
+            android:layout_width="340sp"
+            android:layout_height="40sp"
+            android:layout_marginTop="32dp"
+            android:alpha="0.4"
+            android:background="@drawable/rounded_corner"
+            android:hint="@string/enter_city_name"
+            android:inputType="text"
+            android:paddingLeft="10sp"
+            android:textColor="@color/black"
+            android:textColorHint="#A9A9A9"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editcityname1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

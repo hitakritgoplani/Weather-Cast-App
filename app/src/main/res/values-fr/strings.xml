@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherCast</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="uvi">Indice UV</string>
+    <string name="aqi">IQA</string>
+    <string name="enter_city_name">Entrez le nom de la ville</string>
+    <string name="humidity">Humidité</string>
+    <string name="wind_speed">Vitesse du vent</string>
+    <string name="minimum_ntemperature">Température\nminimale</string>
+    <string name="real_feels">Ressentie :</string>
+    <string name="maximum_ntemperature">Température\nmaximale</string>
+    <string name="temperature">Température</string>
+    <string name="wind_speed_and_humidity">Vitesse du vent et humidité</string>
+    <string name="aqi_and_uvi">IQA et UVI</string>
+    <string name="home">Domicile</string>
+    <string name="weather_forecast">Prévisions météorologiques</string>
+    <string name="weather_news">Météo Nouvelles</string>
+    <string name="compare">Comparez la météo</string>
+    <string name="settings">Réglages</string>
+    <string name="about">À Propos</string>
+    <string name="change_language">Changer de langue</string>
+</resources>

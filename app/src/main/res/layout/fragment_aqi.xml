@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262833"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/uvi"
+            android:layout_width="200sp"
+            android:layout_height="36sp"
+            android:layout_marginBottom="148dp"
+            android:text="@string/uvi"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textUVI"
+            app:layout_constraintEnd_toEndOf="@+id/textUVI"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/aqi"
+            android:layout_width="200sp"
+            android:layout_height="36sp"
+            android:layout_marginBottom="152dp"
+            android:text="@string/aqi"
+            android:textAlignment="center"
+            android:textColor="@color/shadeofblue1"
+            android:textSize="25sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textAqi"
+            app:layout_constraintStart_toStartOf="@+id/textAqi"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+        android:id="@+id/city2"
+        android:layout_width="200sp"
+        android:layout_height="36sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textUVI"
+        app:layout_constraintEnd_toEndOf="@+id/textUVI"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textUVI"
+        app:layout_constraintTop_toTopOf="@+id/textUVI"
+        app:layout_constraintVertical_bias="0.843" />
+
+    <TextView
+        android:id="@+id/uvidescription"
+        android:layout_width="340sp"
+        android:layout_height="150sp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUVI"
+        tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textUVI"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="408dp"
+            android:background="@drawable/circle"
+            android:paddingTop="47sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.838"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editcityname" />
+
+        <EditText
+        android:id="@+id/editcityname"
+        android:layout_width="340sp"
+        android:layout_height="40sp"
+        android:alpha="0.4"
+        android:background="@drawable/rounded_corner"
+        android:hint="@string/enter_city_name"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        android:textColor="@color/black"
+        android:textColorHint="#A9A9A9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/city1"
+        android:layout_width="200sp"
+        android:layout_height="36sp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textAqi"
+        app:layout_constraintEnd_toEndOf="@+id/textAqi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textAqi" />
+
+        <TextView
+            android:id="@+id/aqidescription"
+            android:textStyle="bold"
+            android:layout_width="340sp"
+            android:layout_height="121sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textAqi"
+            app:layout_constraintVertical_bias="0.041"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+        android:id="@+id/search"
+        android:layout_width="42sp"
+        android:layout_height="40sp"
+        android:alpha="0.5"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintBottom_toBottomOf="@+id/editcityname"
+        app:layout_constraintEnd_toEndOf="@+id/editcityname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editcityname"
+        app:layout_constraintTop_toBottomOf="@+id/editcityname"
+        app:layout_constraintTop_toTopOf="@+id/editcityname"
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/search"/>
+
+        <TextView
+            android:id="@+id/textAqi"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/circle"
+            android:paddingTop="47sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editcityname" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
